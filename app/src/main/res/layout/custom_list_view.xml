@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/videoImg"
+            android:layout_weight="1"
+            android:src="@drawable/placeholder"></ImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2.8"
+            android:padding="5dp"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:text="Video Name"
+                android:id="@+id/videoName"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:gravity="start"></TextView>
+            <TextView
+                android:id="@+id/videoDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Duration: 00:00:00"
+                android:textAppearance="?android:attr/textAppearanceListItemSecondary"></TextView>
+            <TextView
+                android:id="@+id/videoSize"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Size: 0.00Mb"
+                android:textAppearance="?android:attr/textAppearanceListItemSecondary"></TextView>
+
+        </LinearLayout>
+            <ImageButton
+                android:id="@+id/menuButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_weight="0.2"
+                android:backgroundTint="@color/colorWhite"
+                app:srcCompat="@drawable/menu" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
